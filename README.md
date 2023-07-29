@@ -1,34 +1,56 @@
-**Market Basket Analysis - Readme**
+# Market Basket Analysis - ReadMe
 
-**Problem Statement:**
-The merchandising team wishes to introduce bundle deals for all products on their website to increase the average basket size when customers make online purchases. The goal is to offer multiple products at a discounted price, encouraging higher sales volume and ultimately increasing turnover.
+## Overview
+This project focuses on conducting a market basket analysis for Decathlon Singapore's online transactions to introduce bundle deals and increase the average basket size. The analysis aims to identify products that are frequently purchased together and create effective bundling strategies to boost sales volume and turnover. The project involves three main considerations: Recommendation System, Customer Segmentation, and Sales of Underperforming Products. Additionally, A/B testing is proposed to evaluate the effectiveness of bundle deals.
 
-**Methodology:**
-The analysis follows a three-pronged approach:
-1. **Recommendation System:** Utilizing historic transaction data to identify products frequently purchased together or having high affinity. This helps in selecting suitable products for bundling.
-2. **Customer Segmentation:** Segmenting the customer base based on demographics, purchase history, and preferences to identify unique preferences and behaviors. This guides in selecting the right products for each segment's bundling strategy.
-3. **Sales of Underperforming Products:** Analyzing sales performance of individual products to identify underperforming items. Bundling these products with more popular ones can increase their visibility and sales potential.
+## 3.a. Overview
+### 3.a.i. Goal:
+The goal of this experiment is to introduce bundle deals to increase the average basket size for online transactions. By offering multiple products at a discounted price, this encourages an increase in sales volume and ultimately higher turnover.
 
-**Analysis based on considerations:**
-The recommendation system identifies popular pairings within the "Sports" and "Product Type" categories. For example, it may reveal that shorts are frequently purchased with other apparel, making them good candidates for bundling deals. Customer segmentation categorizes customers into High Value, Loyal, Churned, and Non-members. For each segment, popular product pairings are identified to tailor bundle deals accordingly.
+### 3.a.ii. Methodology
+The main methodology proposed is to use A/B testing based on the selection of products in the analysis. The selection of products for bundling will be based on three main considerations:
 
-**A/B Testing:**
-Each bundle deal goes through a two-week A/B testing phase to evaluate its effectiveness. The key metric is the average sum of turnover generated during this period. Hypothesis testing is used to compare the performance of bundle deals to regular transactions. Statistical power analysis is conducted to assess the reliability of the results given the sample size.
+1. **Recommendation System:**
+Utilizing historic transaction data, a recommendation system will be implemented to identify products that are often purchased together or have a high affinity, making them suitable candidates for bundling.
 
-**Implementation:**
-Bundle deals are introduced to customers after they add an item to the cart. This prevents complicating the user journey while offering an additional option for increased sales. The experiment spans two weeks to avoid day-of-week effects and major events. A good mix of customers from each segment is considered to evaluate the impact on different spending habits.
+2. **Customer Segmentation:**
+Customer base will be segmented using various criteria such as demographics, purchase history, and preferences. Understanding different customer segments will help identify unique preferences and behaviors, guiding the selection of the right products for each segment's bundling strategy.
 
-**Launch Decision:**
-After the experiment, the results are analyzed, and the null hypothesis is tested against the minimum detectable effect, superiority margin, and significance level. The cost of launching, including the discount per bundle, is considered for final decision-making.
+3. **Sales of Underperforming Products:**
+Sales performance of individual products will also be considered. Products that are underperforming or have lower sales may benefit from bundling with more popular items, increasing their visibility and sales potential.
 
-**Limitations and Caveats:**
-1. The analysis focuses on turnover as a metric, which can be influenced by high-priced items like bicycles. Normalizing turnover based on product price may offer more nuanced insights into popularity.
-2. The analysis relies on broad category pairings; finer relationships between individual products could be explored for better bundling strategies.
+By combining these considerations, the aim is to identify the most suitable products for bundling, which will drive sales volume and lead to higher turnover.
 
-**Business Insights:**
-1. Based on the analysis, personalized marketing campaigns can be implemented using the recommendation system to target individual customers.
-2. High-value members can be targeted with exclusive bundle deals and offers to boost loyalty and spending.
-3. Underperforming products can be bundled with popular ones to boost sales and attract more customers.
+## 3.b. Analysis based on considerations
+In this segment, the three considerations will be explored in depth to find potential products that would benefit most from bundling deals.
 
-**Readme Summary:**
-The Market Basket Analysis uses a recommendation system, customer segmentation, and analysis of underperforming products to introduce effective bundle deals. A/B testing is conducted to evaluate the impact of the deals on average turnover. The analysis provides valuable insights for personalized marketing, customer targeting, and boosting sales of underperforming products.
+### 3.b.i. Recommendation System
+A graph data structure will be implemented to track the number of items that are bought together in the same transaction. This will help identify products with a strong relationship, making them suitable for bundle deals. The analysis will focus on "Sports" and "Product Type" categories, considering broader categories to widen the scope of bundling and provide customers with more choices.
+
+### 3.b.ii. Customer Segmentation
+Customer profiling will be conducted to identify the types of customers and products that have higher affiliation. Four main customer segments will be considered: High-Value Customer, Loyal Customer, Churned Customer, and Non-members. Targeted bundle deals and marketing strategies can be employed for each group to encourage multiple product purchases.
+
+### 3.b.iii. Sales of Underperforming Products
+Sales data for sports categories and product types will be evaluated to identify underperforming products. Bundle deals with popular products will be considered to boost sales and increase exposure for underperforming items.
+
+## 3.c. A/B Testing
+For each bundle deal, A/B testing will be conducted over a 2-week period to evaluate its effectiveness. The success metric will be the average sum of turnover generated over the 2 weeks.
+
+### 3.c.i. Problem Statement
+The objective is to test if a bundle deal is well-received by online customers, as measured by the average sum of turnover per day per user.
+
+### 3.c.ii. Hypothesis Testing
+Null hypothesis: The average sum of turnover per day per user between having bundle deals and no bundle deals are the same.
+Alternative hypothesis: The average sum of turnover per day per user with bundle deals is higher than no bundle deals.
+
+Significance Level: 0.05 (Reject null hypothesis if P-value is less than 5%)
+
+### 3.c.iii. Power Analysis to determine Statistical Power
+Power analysis will be performed to determine the statistical power of the experiments. Factors such as sample size and effect size will be considered to ensure sufficient statistical power.
+
+## 3.d. Conclusion and Business Insights
+The market basket analysis provides valuable insights to introduce effective bundle deals and increase average basket size for online transactions. By considering the recommendation system, customer segmentation, and sales performance of products, Decathlon Singapore can strategically implement bundle deals to drive sales volume and enhance turnover.
+
+Business Insights and Recommendations will include personalized marketing campaigns, loyalty programs, and targeted promotions to engage different customer segments. Additionally, the stable and predictable market environment allows for optimized supply chain and inventory management.
+
+By implementing the recommendations and conducting A/B testing, Decathlon can make informed decisions to improve customer satisfaction, increase sales, and drive business growth. Continuous monitoring and validation will be crucial to ensure the effectiveness of the bundle deals and maintain relevance in the market.
