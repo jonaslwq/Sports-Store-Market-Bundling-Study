@@ -1,7 +1,7 @@
 **Market Basket Analysis - Readme**
 
 **Problem Statement:**
-The merchandising team at Decathalon wishes to introduce bundle deals for all products on their website to increase the average basket size when customers make online purchases. The goal is to offer multiple products at a discounted price, encouraging higher sales volume and ultimately increasing turnover.
+The merchandising team wishes to introduce bundle deals for all products on their website to increase the average basket size when customers make online purchases. The goal is to offer multiple products at a discounted price, encouraging higher sales volume and ultimately increasing turnover.
 
 **Methodology:**
 The analysis follows a three-pronged approach:
@@ -31,4 +31,4 @@ After the experiment, the results are analyzed, and the null hypothesis is teste
 3. Underperforming products can be bundled with popular ones to boost sales and attract more customers.
 
 **Readme Summary:**
-The Market Basket Analysis at Decathalon uses a recommendation system, customer segmentation, and analysis of underperforming products to introduce effective bundle deals. A/B testing is conducted to evaluate the impact of the deals on average turnover. The analysis provides valuable insights for personalized marketing, customer targeting, and boosting sales of underperforming products.
+The Market Basket Analysis uses a recommendation system, customer segmentation, and analysis of underperforming products to introduce effective bundle deals. A/B testing is conducted to evaluate the impact of the deals on average turnover. The analysis provides valuable insights for personalized marketing, customer targeting, and boosting sales of underperforming products.
